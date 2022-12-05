@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Login 08</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/login.css">
+
+	</head>
+	<body style="overflow-x: hidden">
+	<div id="page1" class="slide-in">
+		<section class="ftco-section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-6 col-lg-5">
+						<div class="login-wrap p-4 p-md-5">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="fa fa-user-o"></span>
+					</div>
+					<h3 class="text-center mb-4">변경이<br>완료되었습니다.</h3>
+                    <div class="text-center">
+						<h6>다시 메인 페이지로<br>이동해볼까요?<br><br><br><br><br><br><br><br></h6>
+					</div>
+					<div style="text-align: center;">
+						<button type="button" class="btn btn-primary rounded submit p-3 px-5" onClick="location.href='../main.php'">이동</button>
+					</div>
+				</form>
+				</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="../js/jquery.min.js"></script>
+  <script src="../js/popper.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/main.js"></script>
+
+	</body>
+</html>
+

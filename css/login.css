@@ -1,0 +1,14 @@
+  .slide-in {
+    animation: change 0.5s ease forwards;
+  }
+  
+  @keyframes change {
+    from {
+      transform: translateX(100%);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+  }

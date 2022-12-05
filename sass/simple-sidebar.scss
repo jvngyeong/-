@@ -1,0 +1,99 @@
+@import "variables";
+
+/* ----------------------------------------------------
+ Sidebar
+---------------------------------------------------- */
+
+.sidebar{
+  z-index: $zindex-sidebar;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  margin-left: -$sidebar-width;
+  width: $sidebar-width;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: $sidebar-bg;
+
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  &.toggled{
+    margin-left: 0;
+  }
+}
+
+
+/* ----------------------------------------------------
+ Sidebar Brand
+---------------------------------------------------- */
+
+.sidebar-brand {
+  display: block;
+  width: $sidebar-width;
+  padding: $sidebar-brand-padding;
+  font-size: $sidebar-brand-font-size;
+  color: $sidebar-brand-color;
+  background: $sidebar-brand-bg;
+  font-weight: bold;
+
+  &a:hover {
+    text-decoration: none;
+    color: $sidebar-brand-hover-color;
+    background: $sidebar-brand-hover-bg;
+  }
+
+  &a:active,
+  &a:focus{
+    text-decoration: none;
+    color: $sidebar-brand-color;
+    background: $sidebar-brand-bg;
+  }
+}
+
+/* ----------------------------------------------------
+ Sidebar Nav
+---------------------------------------------------- */
+
+.sidebar-nav {
+  width: $sidebar-width;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav ul{
+  margin: 0;
+  padding: 0;
+  background: rgba(200,200,200,.1);
+  list-style: none;
+}
+
+.sidebar-nav li {
+  line-height: $sidebar-nav-line-height;
+}
+
+.sidebar-nav li a {
+  display: block;
+  padding-left: $sidebar-indent;
+  text-decoration: none;
+  color: $sidebar-link-color;
+
+  &:hover {
+    text-decoration: none;
+    color: $sidebar-link-hover-color;
+    background: rgba(0,0,0,.2);
+  }
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &.active{
+    text-decoration: none;
+    color: $sidebar-link-hover-color;
+    background: $sidebar-link-hover-bg;
+  }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="utf-8">
+    <title>회원가입</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/login.css">
+    <script language="javascript">
+
+        function Input() 
+        {
+
+            if(document.frmInput.name.value == "") {
+                alert("이름을 확인해주세요.");
+                document.frmInput.name.focus();
+                return false;
+            }
+            if(document.frmInput.phone.value == "") {
+                alert("전화번호를 확인해주세요.");
+                document.frmInput.phone.focus();
+                return false;
+            }
+            if(document.frmInput.birth.value == "") {
+                alert("생년월일을 확인해주세요.");
+                document.frmInput.birth.focus();
+                return false;
+            }
+            if(document.frmInput.user_id.value == "") {
+                alert("ID를 확인해주세요.");
+                document.frmInput.user_id.focus();
+                return false;
+            }
+            if(document.frmInput.user_pw.value == "") {
+                alert("비밀번호를 확인해주세요.");
+                document.frmInput.user_pw.focus();
+                return false;
+            }
+            if(document.frmInput.email.value == "") {
+                alert("이메일을 확인해주세요.");
+                document.frmInput.email.focus();
+                return false;
+            }
+            document.frmInput.submit();
+        }
+    </script>
+	</head>
+	<body style="max-width: 100%;  overflow-x:hidden;">
+	<div id="page1" class="slide-in">
+		<section class="ftco-section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-6 col-lg-5">
+						<div class="login-wrap p-4 p-md-5">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="fa fa-user-o"></span>
+					</div>
+					<h3 class="text-center mb-4">사용자님의 정보를<br>입력해주세요.</h3>
+                    <form name="frmInput" action="memberWrite.php" method="post" enctype="multipart/form-data">
+						<div class="form-group">
+							이름
+							<input type="text" name="name" id="name" class="form-control rounded-left" placeholder="Name" required>
+						</div>
+
+						<div class="form-group">
+							전화번호
+							<input type="text" name="phone" id="phone" class="form-control rounded-left" placeholder="Phone" required>
+						</div>
+
+						<div class="form-group">
+                            생년월일
+                            <input type="date" id="birth" name="birth" class="form-control rounded-left" placeholder="Birth" required>
+                        </div>
+
+                        <div class="form-group">
+							ID
+							<input type="text"  name="user_id" id="user_id" class="form-control rounded-left" placeholder="ID" required>
+						</div>
+
+						<div class="form-group">
+							Password
+							<input type="Password" name="user_pw" id="user_pw" class="form-control rounded-left" placeholder="Password" required>
+						</div>
+
+						<div class="form-group">
+							E-mail
+							<input type="email" name="email" id="email" class="form-control rounded-left" placeholder="E-mail" required>
+						</div>
+
+					<div class="form-group">
+						<button type="button" class="btn btn-primary rounded submit p-3 px-5" onclick="Input()">확인</button>
+					</div>
+				</form>
+				</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+

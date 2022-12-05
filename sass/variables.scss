@@ -1,0 +1,23 @@
+//== Sidebar
+//
+//## Customizes the `.sidebar` component with basic values, each used across all table variations.
+
+$sidebar-width: 250px !default;
+$sidebar-page-content-padding: 15px !default;
+$sidebar-indent: 20px !default;
+$sidebar-nav-line-height: 40px !default;
+
+$sidebar-brand-padding: 10px 20px 10px $sidebar-indent !default;
+$sidebar-brand-font-size: 18px !default;
+
+$sidebar-bg: #222 !default;
+$sidebar-link-color: #999 !default;
+$sidebar-link-hover-color: #fff !default;
+$sidebar-link-hover-bg: black !default;
+
+$sidebar-brand-bg: transparent !default;
+$sidebar-brand-color: #bbb !default;
+$sidebar-brand-hover-color: #fff !default;
+$sidebar-brand-hover-bg: $sidebar-brand-bg !default;
+
+$zindex-sidebar: 1000;

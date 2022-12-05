@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Login 08</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/login.css">
+	</head>
+	<body style="position: fixed; width:100%;  overflow-x:hidden;">
+	<div id="page1" class="slide-in">
+		<section class="ftco-section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-6 col-lg-5">
+						<div class="login-wrap p-4 p-md-5">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="fa fa-user-o"></span>
+					</div>
+					<h3 class="text-center mb-4">아이디와 패스워드를<br>입력하세요.<br><br><br><br></h3>
+						<form action="loginCheck.php" class="login-form" method="post">
+						<div class="form-group">
+							ID
+							<input type="text" id="user_id" name="user_id" class="form-control rounded-left" placeholder="ID" required>
+						</div>
+						<div class="form-group">
+							Password
+							<input type="password" id="user_pw" name="user_pw" class="form-control rounded-left" placeholder="Password" required>
+						</div>
+					<div class="form-group">
+						<div class="text-center">
+							<a href="member_create.html">아이디가 없으신가요?</a>
+						</div>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary rounded submit p-3 px-5">로그인</button>
+					</div>
+				</form>
+				</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+
